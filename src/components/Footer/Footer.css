@@ -1,0 +1,111 @@
+/* Footer Container */
+footer {
+  background-color: #007acc;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  position: relative;
+  margin-top: 20px;
+}
+
+/* Footer Content Layout */
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  text-align: center;
+  max-width: 1200px; 
+  margin: 0 auto; 
+}
+
+/* About Section */
+.footer-section.about {
+  flex: 1;
+  min-width: 250px;
+  padding: 10px;
+}
+
+/* Quick Links Section */
+.footer-section.links {
+  flex: 1;
+  min-width: 250px;
+  padding: 10px;
+}
+
+.footer-section.links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section.links li {
+  margin: 5px 0;
+}
+
+.footer-section.links a {
+  color: blue;
+  text-decoration: none;
+  font-size: 1.1rem; 
+  transition: color 0.3s ease;
+}
+
+.footer-section.links a:hover {
+  color: #ffcc00;
+}
+
+/* Social Media Section */
+.footer-section.social {
+  flex: 1;
+  min-width: 250px;
+  padding: 10px;
+}
+
+.footer-section.social .social-links {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section.social li {
+  display: inline-block;
+  margin-right: 15px;
+}
+
+.footer-section.social a {
+  color: blue;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+.footer-section.social a:hover {
+  color: #ffcc00;
+}
+
+/* Footer Bottom */
+.footer-bottom {
+  margin-top: 20px;
+  font-size: 0.9rem;
+  border-top: 1px solid #ffffff66;
+  padding-top: 10px;
+}
+
+/* Responsive Footer Design */
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column; 
+    align-items: center; 
+  }
+
+  .footer-section {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .footer-section.links li {
+    display: block;
+    margin: 10px 0; 
+  }
+
+  .footer-section.social li {
+    display: block;
+    margin: 10px 0;
+  }
+}

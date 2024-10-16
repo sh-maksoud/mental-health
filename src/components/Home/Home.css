@@ -1,0 +1,35 @@
+.home-section {
+    padding: 40px;
+    background-color: #e0f7fa;
+    text-align: center;
+}
+
+.home-section h2 {
+    font-size: 2.5rem;
+    color: #007acc;
+    margin-bottom: 20px; 
+}
+
+.home-section h3 {
+    font-size: 2rem;
+    color: #005fa3;
+    margin: 20px 0;
+}
+
+.home-section p {
+    font-size: 1.2rem;
+    color: #333;
+    margin: 10px 0; 
+}
+
+.home-section ul {
+    list-style-type: none; 
+    padding: 0; 
+    margin: 20px 0; 
+}
+
+.home-section li {
+    font-size: 1.1rem; 
+    color: #555; 
+    margin: 5px 0; 
+}

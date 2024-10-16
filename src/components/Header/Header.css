@@ -1,0 +1,132 @@
+/* Main Header Styling */
+.main-header {
+    background-color: #007acc;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-family: 'Cairo', sans-serif;
+}
+
+/* New Navigation Row */
+.new-nav {
+    background-color: #f8f9fa;
+    padding: 10px 20px; 
+    border-top: 2px solid #007acc;
+    border-bottom: 2px solid #007acc;
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    flex-wrap: wrap; 
+}
+
+/* Logo Styling */
+.logo {
+    height: 100px; 
+    margin-left: auto; 
+}
+
+/* Navigation Links */
+.new-nav nav {
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    flex-grow: 1; 
+}
+
+/* Navigation Links */
+.new-nav a {
+    margin: 0 20px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: #007acc;
+    font-family: 'Cairo', sans-serif;
+    transition: color 0.3s ease;
+}
+
+/* Date and Time Styling */
+.date-time {
+    margin-right: auto; 
+    font-size: 1rem;
+    color: #007acc; 
+}
+
+/* Old Navigation Bar */
+.old-nav {
+    margin-top: 15px;
+    display: flex; 
+    justify-content: center; 
+}
+
+.old-nav a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: white;
+    font-size: 1.1rem;
+}
+
+.old-nav a:hover {
+    color: #ffcc00;
+}
+
+/* Active Tab Style */
+.old-nav .active {
+    color: #ffcc00; 
+    font-weight: bold; 
+}
+
+/* Active Tab Style for New Nav */
+.new-nav .active {
+    color: #ff8800; 
+    font-weight: bold; 
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .logo {
+        height: 60px; 
+    }
+
+    .new-nav a {
+        font-size: 1rem; 
+        margin: 0 10px; 
+    }
+
+    .date-time {
+        font-size: 0.9rem; 
+    }
+
+    .main-header {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .new-nav {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px; 
+    }
+
+    .old-nav {
+        flex-direction: column; 
+    }
+
+    /* Further reduce font sizes for very small screens */
+    .new-nav a {
+        font-size: 0.6rem; 
+    }
+
+    .old-nav a {
+        font-size: 0.9rem;
+    }
+
+    .date-time {
+        font-size: 0.8rem; 
+    }
+
+    .main-header {
+        padding: 10px;
+    }
+}
+
+

@@ -1,0 +1,95 @@
+/* Shared Section Styling */
+section {
+    padding: 40px;
+    text-align: center;
+}
+
+/* Services Section */
+.services-section {
+    background-color: #e8f5e9; 
+}
+
+.services-section h2 {
+    font-size: 2.5rem; 
+    color: #388e3c; 
+    margin-bottom: 20px;
+}
+
+.services-section p {
+    font-size: 1.2rem;
+    color: #333;
+    margin: 20px 0;
+    line-height: 1.6;
+}
+
+.services-section ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.services-section li {
+    font-size: 1.2rem;
+    color: #333;
+    margin: 10px 0;
+    line-height: 1.6;
+}
+
+.services-section li::before {
+    content: "✔️"; 
+    margin-right: 10px;
+    color: #388e3c;
+}
+
+/* Consultations Section */
+.consultations-section {
+    background-color: #fff3e0; 
+}
+
+.consultations-section h2 {
+    font-size: 2.5rem;
+    color: #ef6c00; 
+    margin-bottom: 20px;
+}
+
+.consultations-section p {
+    font-size: 1.2rem;
+    color: #333;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.consultations-section ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.consultations-section li {
+    font-size: 1.2rem;
+    color: #333;
+    margin: 10px 0;
+    line-height: 1.6;
+}
+
+.consultations-section li::before {
+    content: "✔️";
+    margin-right: 10px;
+    color: #ef6c00;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    section {
+        padding: 20px;
+    }
+
+    section h2 {
+        font-size: 2rem;
+    }
+
+    section p, section li {
+        font-size: 1rem; 
+    }
+}

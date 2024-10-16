@@ -1,0 +1,43 @@
+section {
+    margin: 20px 0;
+    padding: 15px;
+    border: 1px solid #007acc;
+    border-radius: 5px;
+    background-color: white;
+}
+
+.meditation-list {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.meditation-list li {
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #007acc;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.3s ease;
+}
+
+.meditation-list li:hover {
+    background-color: #f0f0f0; 
+}
+
+button {
+    padding: 10px;
+    background-color: #007acc;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background-color: #005f99; 
+    transform: scale(1.05); 
+}
