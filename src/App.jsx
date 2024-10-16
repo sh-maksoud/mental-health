@@ -13,12 +13,17 @@ import AutismResources from './components/AutismResources/AutismResources';
 import LearningDifficulties from './components/LearningDifficulties/LearningDifficulties';
 import BehaviorModification from './components/BehaviorModification/BehaviorModification';
 import SkillDevelopment from './components/SkillDevelopment/SkillDevelopment';
+import ScrollToTopButton from './components/ScrollToTopButton/ScrollToTopButton';
+import ScrollToTop from './components/ScrollToTop';
+
+
 
 import './App.css';
 
 function App() {
   return (
     <Router>
+      <ScrollToTop />
       <div className="App">
         <Header />
         <main>
@@ -38,6 +43,7 @@ function App() {
           </Routes>
         </main>
         <Footer />
+        <ScrollToTopButton />
       </div>
     </Router>
   );
