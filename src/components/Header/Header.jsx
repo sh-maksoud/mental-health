@@ -47,12 +47,14 @@ function Header() {
                 <nav className="old-nav">
                     <NavLink to="/" className={({ isActive }) => (isActive ? 'active' : '')}>الجلسات</NavLink>
                     <NavLink to="/mood-tracker" className={({ isActive }) => (isActive ? 'active' : '')}>تتبع المزاج</NavLink>
-                    <NavLink to="/tips" className={({ isActive }) => (isActive ? 'active' : '')}>نصائح</NavLink>
+                    <NavLink to="/ershad" className={({ isActive }) => (isActive ? 'active' : '')}>إرشاد أسري</NavLink>
                     <NavLink to="/meditation" className={({ isActive }) => (isActive ? 'active' : '')}>تمارين التأمل</NavLink>
-                    <NavLink to="/autism-resources" className={({ isActive }) => (isActive ? 'active' : '')}>موارد التوحد</NavLink>
+                    <NavLink to="/autism-resources" className={({ isActive }) => (isActive ? 'active' : '')}>اضطراب التوحد</NavLink>
                     <NavLink to="/learning-difficulties" className={({ isActive }) => (isActive ? 'active' : '')}>صعوبات التعلم</NavLink>
                     <NavLink to="/behavior-modification" className={({ isActive }) => (isActive ? 'active' : '')}>تعديل السلوك</NavLink>
                     <NavLink to="/skill-development" className={({ isActive }) => (isActive ? 'active' : '')}>تنمية المهارات</NavLink>
+                    <NavLink to="/speech-rehabilitation" className={({ isActive }) => (isActive ? 'active' : '')}>تأهيل تخاطبي</NavLink> 
+
                 </nav>
             </div>
         </header>

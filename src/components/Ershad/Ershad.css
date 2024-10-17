@@ -1,0 +1,75 @@
+/* Ershad.css */
+section {
+    margin: 20px 0;
+    padding: 15px;
+    border: 1px solid #007acc;
+    border-radius: 5px;
+    background-color: white;
+}
+
+h2 {
+    color: #007acc;
+    font-family: 'Cairo', sans-serif;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h3 {
+    color: #007acc;
+    margin-top: 20px;
+    font-family: 'Cairo', sans-serif;
+}
+
+ul {
+    list-style: disc inside;
+    padding-left: 20px; 
+}
+
+li {
+    margin: 10px 0;
+    padding: 5px;
+    transition: color 0.3s ease;
+    font-family: 'Cairo', sans-serif;
+}
+
+li a {
+    color: #333; 
+    text-decoration: none; 
+}
+
+li a:hover {
+    color: #007acc; 
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    section {
+        padding: 10px;
+    }
+
+    h2, h3 {
+        font-size: 1.2rem;
+    }
+
+    ul {
+        padding-left: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    h2, h3 {
+        font-size: 1rem;
+    }
+
+    ul {
+        padding-left: 5px;
+    }
+
+    li {
+        margin: 8px 0;
+    }
+
+    li a {
+        font-size: 0.9rem;
+    }
+}

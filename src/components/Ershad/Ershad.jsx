@@ -1,6 +1,6 @@
-import './Tips.css';
+import './Ershad.css';
 
-const tips = [
+const ershad = [
   { 
     text: "مارس التمارين الرياضية بانتظام.", 
     category: "الرفاهية البدنية", 
@@ -38,20 +38,20 @@ const tips = [
   },
 ];
 
-function Tips() {
-  const categories = [...new Set(tips.map(tip => tip.category))]; // Get unique categories
+function Ershad() {
+  const categories = [...new Set(ershad.map(item => item.category))]; // Get unique categories
 
   return (
     <section>
-      <h2>نصائح لتحسين الصحة النفسية</h2>
+      <h2>إرشاد أسري لتحسين الصحة النفسية</h2>
       {categories.map((category) => (
         <div key={category}>
           <h3>{category}</h3>
           <ul>
-            {tips.filter(tip => tip.category === category).map((tip, index) => (
+            {ershad.filter(item => item.category === category).map((item, index) => (
               <li key={index}>
-                <a href={tip.link} target="_blank" rel="noopener noreferrer">
-                  {tip.text}
+                <a href={item.link} target="_blank" rel="noopener noreferrer">
+                  {item.text}
                 </a>
               </li>
             ))}
@@ -62,4 +62,4 @@ function Tips() {
   );
 }
 
-export default Tips;
+export default Ershad;

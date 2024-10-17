@@ -2,6 +2,11 @@ import './AutismResources.css';
 
 const resources = [
   {
+    title: "طرق تأهيل طفل التوحد",
+    description: "اكتشف الطرق المختلفة لتأهيل طفل التوحد وتشجيعه على التفاعل الاجتماعي والتواصل وتحسين مهاراته الحياتية.",
+    link: "https://www.example.com/autism-rehabilitation"
+  },
+  {
     title: "معلومات عن التوحد",
     description: "تعرف على أعراض التوحد وكيفية التعامل معه. يشمل ذلك علامات مبكرة للتشخيص وطرق الدعم.",
     link: "https://www.example.com/autism-info"
@@ -31,7 +36,7 @@ const resources = [
 function AutismResources() {
   return (
     <section>
-      <h2>موارد التوحد</h2>
+      <h2>اضطراب التوحد</h2>
       <ul>
         {resources.map((resource, index) => (
           <li key={index}>
