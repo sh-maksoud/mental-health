@@ -36,7 +36,7 @@ const skills = [
 function SkillDevelopment() {
     return (
         <section id="skill-development">
-            <h2>تنمية شاملة للطفل</h2>
+            <h2>تنمية المهارات</h2>
             <p>يركز هذا القسم على استخدام برنامج تنمية شاملة للطفل لتعزيز مهاراته المختلفة.</p>
             <ul>
                 {skills.map((skill, index) => (

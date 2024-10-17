@@ -44,17 +44,16 @@ function Header() {
             </div>
             <div className="main-header">
                 <h1>منصة دعم الصحة النفسية</h1>
-                <nav className="old-nav">
-                    <NavLink to="/" className={({ isActive }) => (isActive ? 'active' : '')}>الجلسات</NavLink>
-                    <NavLink to="/mood-tracker" className={({ isActive }) => (isActive ? 'active' : '')}>تتبع المزاج</NavLink>
+                <nav className="old-nav">                    
+                <NavLink to="/book-doctor" className={({ isActive }) => (isActive ? 'active' : '')}>احجز مع دكتور</NavLink>
+                <NavLink to="/course-booking" className={({ isActive }) => (isActive ? 'active' : '')}>احجز دورات تدريبية</NavLink> 
                     <NavLink to="/ershad" className={({ isActive }) => (isActive ? 'active' : '')}>إرشاد أسري</NavLink>
-                    <NavLink to="/meditation" className={({ isActive }) => (isActive ? 'active' : '')}>تمارين التأمل</NavLink>
                     <NavLink to="/autism-resources" className={({ isActive }) => (isActive ? 'active' : '')}>اضطراب التوحد</NavLink>
                     <NavLink to="/learning-difficulties" className={({ isActive }) => (isActive ? 'active' : '')}>صعوبات التعلم</NavLink>
                     <NavLink to="/behavior-modification" className={({ isActive }) => (isActive ? 'active' : '')}>تعديل السلوك</NavLink>
                     <NavLink to="/skill-development" className={({ isActive }) => (isActive ? 'active' : '')}>تنمية المهارات</NavLink>
                     <NavLink to="/speech-rehabilitation" className={({ isActive }) => (isActive ? 'active' : '')}>تأهيل تخاطبي</NavLink> 
-
+                    <NavLink to="/counseling" className={({ isActive }) => (isActive ? 'active' : '')}>الدعم النفسي</NavLink>
                 </nav>
             </div>
         </header>

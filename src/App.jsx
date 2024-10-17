@@ -6,14 +6,15 @@ import About from './components/About/About';
 import Services from './components/ServicesConsultations/ServicesConsultations';
 import Contact from './components/Contact/Contact';
 import SessionList from './components/SessionList/SessionList';
-import MoodTracker from './components/MoodTracker/MoodTracker';
+import CourseBooking from './components/CourseBooking/CourseBooking';
 import Ershad from './components/Ershad/Ershad';
-import Meditation from './components/Meditation/Meditation';
+import DoctorSearch from './components/DoctorSearch/DoctorSearch';
 import AutismResources from './components/AutismResources/AutismResources';
 import LearningDifficulties from './components/LearningDifficulties/LearningDifficulties';
 import BehaviorModification from './components/BehaviorModification/BehaviorModification';
 import SkillDevelopment from './components/SkillDevelopment/SkillDevelopment';
 import SpeechRehabilitation from './components/SpeechRehabilitation/SpeechRehabilitation'; 
+import Counseling from './components/Counseling/Counseling';
 import ScrollToTopButton from './components/ScrollToTopButton/ScrollToTopButton';
 import ScrollToTop from './components/ScrollToTop';
 
@@ -34,14 +35,15 @@ function App() {
             <Route path="/services" element={<Services />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/" element={<SessionList />} />
-            <Route path="/mood-tracker" element={<MoodTracker />} />
+            <Route path="/course-booking" element={<CourseBooking />} />
             <Route path="/ershad" element={<Ershad />} />
-            <Route path="/meditation" element={<Meditation />} />
+            <Route path="/book-doctor" element={<DoctorSearch />} /> 
             <Route path="/autism-resources" element={<AutismResources />} />
             <Route path="/learning-difficulties" element={<LearningDifficulties />} />
             <Route path="/behavior-modification" element={<BehaviorModification />} />
             <Route path="/skill-development" element={<SkillDevelopment />} />
-            <Route path="/speech-rehabilitation" element={<SpeechRehabilitation />} /> {/* Add this route */}
+            <Route path="/speech-rehabilitation" element={<SpeechRehabilitation />} /> 
+            <Route path="/counseling" element={<Counseling />} />
           </Routes>
         </main>
         <Footer />

@@ -1,0 +1,36 @@
+.counseling-section {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+}
+
+.counseling-section h2 {
+    color: #333;
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.counseling-section p {
+    color: #555;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.counseling-section h3 {
+    color: #007bff;
+    font-size: 24px;
+    margin: 20px 0 10px;
+}
+
+.counseling-section ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.counseling-section li {
+    color: #666;
+    font-size: 16px;
+    margin-bottom: 8px;
+}
