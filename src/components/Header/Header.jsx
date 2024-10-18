@@ -173,9 +173,9 @@ function Header() {
     }, []);
 
     const handleLinkClick = () => {
-        // if (isMobile) {
+        if (isMobile) {
             setIsDropdownVisible(false); // Close dropdown on mobile when a link is clicked
-        // }
+        }
     };
 
     return (
