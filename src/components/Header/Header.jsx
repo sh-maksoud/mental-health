@@ -1,11 +1,12 @@
 import { NavLink } from 'react-router-dom';
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useRef } from 'react';
 import './Header.css';
 import logo from '/images/logo.png'; 
 
 function Header() {
     const [currentDateTime, setCurrentDateTime] = useState('');
     const [isDropdownVisible, setIsDropdownVisible] = useState(false); 
+    const dropdownRef = useRef(null); // Create a ref for the dropdown
 
     useEffect(() => {
         const updateDateTime = () => {
@@ -29,10 +30,24 @@ function Header() {
 
     // Toggle dropdown visibility
     const toggleDropdown = () => {
-        setIsDropdownVisible((prev) => !prev);
+        setIsDropdownVisible(!isDropdownVisible);
     };
 
-    // Handle link selection
+    // Close dropdown if clicking outside
+    const handleClickOutside = (event) => {
+        if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+            setIsDropdownVisible(false);
+        }
+    };
+
+    // Event listener for clicks outside the dropdown
+    useEffect(() => {
+        document.addEventListener('mousedown', handleClickOutside);
+        return () => {
+            document.removeEventListener('mousedown', handleClickOutside);
+        };
+    }, []);
+
     const handleLinkClick = () => {
         setIsDropdownVisible(false); // Hide dropdown when a link is clicked
     };
@@ -56,13 +71,17 @@ function Header() {
                         <NavLink to="/about" className={({ isActive }) => (isActive ? 'active' : '')}>من نحن</NavLink>
                         
                         {/* Dropdown Menu for Services */}
-                        <div className="dropdown">
-                            <button 
+                        <div 
+                            className="dropdown"
+                            ref={dropdownRef} // Attach ref to dropdown
+                        >
+                            <NavLink 
+                                to="/services" 
                                 className="dropbtn" 
                                 onClick={toggleDropdown} // Toggle on click
                             >
                                 الخدمات <span className="arrow">▼</span>
-                            </button>
+                            </NavLink>
                             {isDropdownVisible && ( 
                                 <div className="dropdown-content">
                                     <NavLink to="/join-doctors" onClick={handleLinkClick}>انضم كطبيب أو أخصائي</NavLink> 
