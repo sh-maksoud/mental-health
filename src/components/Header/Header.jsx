@@ -33,21 +33,7 @@ function Header() {
         setIsDropdownVisible(!isDropdownVisible);
     };
 
-    // Close dropdown if clicking outside
-    const handleClickOutside = (event) => {
-        if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
-            setIsDropdownVisible(false);
-        }
-    };
-
-    // Event listener for clicks outside the dropdown
-    useEffect(() => {
-        document.addEventListener('mousedown', handleClickOutside);
-        return () => {
-            document.removeEventListener('mousedown', handleClickOutside);
-        };
-    }, []);
-
+    // Handle link selection
     const handleLinkClick = () => {
         setIsDropdownVisible(false); // Hide dropdown when a link is clicked
     };
