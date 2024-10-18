@@ -1,0 +1,69 @@
+.book-specialist {
+    padding: 20px;
+    background-color: #f8f9fa;
+    border: 1px solid #007acc;
+    border-radius: 5px;
+    margin: 20px auto; /* Centering */
+    max-width: 600px; /* Added max-width for responsiveness */
+    text-align: right; /* For RTL support */
+}
+
+.book-specialist h2,
+.book-specialist h3 {
+    color: #007acc;
+}
+
+.booking-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    padding: 10px;
+    border: 1px solid #007acc;
+    border-radius: 5px;
+    width: 100%; /* Use 100% for full width */
+    box-sizing: border-box; /* Ensure padding is included in width */
+}
+
+.submit-button {
+    padding: 10px;
+    background-color: #007acc;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.submit-button:hover {
+    background-color: #005999;
+}
+
+.specialists-list {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0; /* Remove default padding */
+}
+
+.specialist-item {
+    display: flex; /* Use flexbox for alignment */
+    align-items: center; /* Center items vertically */
+    margin-bottom: 15px; /* Space between list items */
+}
+
+.specialist-image {
+    width: 100px; /* Set image width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 50%; /* Make the image round */
+    margin-left: 10px; /* Space between image and text */
+}

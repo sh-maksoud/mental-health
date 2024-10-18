@@ -1,0 +1,66 @@
+.join-doctors {
+    padding: 20px;
+    background-color: #f8f9fa;
+    border: 1px solid #007acc;
+    border-radius: 5px;
+    margin: 20px 0;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: right;
+}
+
+.join-doctors h2 {
+    color: #007acc;
+}
+
+.join-form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"] {
+    padding: 10px;
+    border: 1px solid #007acc;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 15px; /* Add margin for spacing between inputs */
+}
+
+.agreement-group {
+    display: flex;
+    align-items: center; /* Align items vertically centered */
+    margin-bottom: 15px;
+}
+
+.agreement-group input {
+    margin: 0; /* Remove any margin from the checkbox */
+    width: auto; /* Ensures checkbox width does not stretch */
+}
+
+.agreement-group label {
+    margin-left: 5px; /* Adjust margin as necessary */
+    font-weight: normal; /* Normal weight for label */
+    line-height: 1.2; /* Adjust line height for better spacing */
+}
+
+.submit-button {
+    padding: 10px;
+    background-color: #007acc;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.submit-button:hover {
+    background-color: #005999;
+}
