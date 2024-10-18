@@ -1,11 +1,12 @@
 import { NavLink } from 'react-router-dom';
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useRef } from 'react';
 import './Header.css';
 import logo from '/images/logo.png'; 
 
 function Header() {
     const [currentDateTime, setCurrentDateTime] = useState('');
-    const [isDropdownVisible, setIsDropdownVisible] = useState(false); // حالة للتحكم في رؤية القائمة
+    const [isDropdownVisible, setIsDropdownVisible] = useState(false); 
+    const dropdownRef = useRef(null); // Create a ref for the dropdown
 
     useEffect(() => {
         const updateDateTime = () => {
@@ -27,13 +28,28 @@ function Header() {
         return () => clearInterval(intervalId);
     }, []);
 
-    // Handle mouse enter and leave for the dropdown
-    const handleMouseEnter = () => {
-        setIsDropdownVisible(true);
+    // Toggle dropdown visibility
+    const toggleDropdown = () => {
+        setIsDropdownVisible(!isDropdownVisible);
     };
 
-    const handleMouseLeave = () => {
-        setIsDropdownVisible(false);
+    // Close dropdown if clicking outside
+    const handleClickOutside = (event) => {
+        if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+            setIsDropdownVisible(false);
+        }
+    };
+
+    // Event listener for clicks outside the dropdown
+    useEffect(() => {
+        document.addEventListener('mousedown', handleClickOutside);
+        return () => {
+            document.removeEventListener('mousedown', handleClickOutside);
+        };
+    }, []);
+
+    const handleLinkClick = () => {
+        setIsDropdownVisible(false); // Hide dropdown when a link is clicked
     };
 
     return (
@@ -57,29 +73,32 @@ function Header() {
                         {/* Dropdown Menu for Services */}
                         <div 
                             className="dropdown"
-                            onMouseEnter={handleMouseEnter} // إظهار القائمة عند التحويم
-                            onMouseLeave={handleMouseLeave} // إخفاء القائمة عند الخروج
+                            ref={dropdownRef} // Attach ref to dropdown
                         >
-                            <NavLink to="/services" className="dropbtn"> {/* تغيير هنا ليصبح NavLink */}
+                            <NavLink 
+                                to="/services" 
+                                className="dropbtn" 
+                                onClick={toggleDropdown} // Toggle on click
+                            >
                                 الخدمات <span className="arrow">▼</span>
                             </NavLink>
-                            {isDropdownVisible && ( // عرض القائمة بناءً على الحالة
+                            {isDropdownVisible && ( 
                                 <div className="dropdown-content">
-                                    <NavLink to="/join-doctors">انضم كطبيب أو أخصائي</NavLink> 
-                                    <NavLink to="/book-doctor">احجز مع دكتور</NavLink>
-                                    <NavLink to="/book-specialist">احجز مع أخصائي</NavLink>
-                                    <NavLink to="/course-booking">احجز دورات تدريبية</NavLink>
-                                    <NavLink to="/ershad">إرشاد أسري</NavLink>
-                                    <NavLink to="/autism-resources">اضطرابات التوحد</NavLink>
-                                    <NavLink to="/learning-difficulties">صعوبات التعلم</NavLink>
-                                    <NavLink to="/behavior-modification">تعديل السلوك</NavLink>
-                                    <NavLink to="/skill-development">تنمية المهارات</NavLink>
-                                    <NavLink to="/speech-rehabilitation"> التخاطب</NavLink>
-                                    <NavLink to="/counseling">الدعم النفسي</NavLink>
+                                    <NavLink to="/join-doctors" onClick={handleLinkClick}>انضم كطبيب أو أخصائي</NavLink> 
+                                    <NavLink to="/book-doctor" onClick={handleLinkClick}>احجز مع دكتور</NavLink>
+                                    <NavLink to="/book-specialist" onClick={handleLinkClick}>احجز مع أخصائي</NavLink>
+                                    <NavLink to="/course-booking" onClick={handleLinkClick}>احجز دورات تدريبية</NavLink>
+                                    <NavLink to="/ershad" onClick={handleLinkClick}>إرشاد أسري</NavLink>
+                                    <NavLink to="/autism-resources" onClick={handleLinkClick}>اضطرابات التوحد</NavLink>
+                                    <NavLink to="/learning-difficulties" onClick={handleLinkClick}>صعوبات التعلم</NavLink>
+                                    <NavLink to="/behavior-modification" onClick={handleLinkClick}>تعديل السلوك</NavLink>
+                                    <NavLink to="/skill-development" onClick={handleLinkClick}>تنمية المهارات</NavLink>
+                                    <NavLink to="/speech-rehabilitation" onClick={handleLinkClick}> التخاطب</NavLink>
+                                    <NavLink to="/counseling" onClick={handleLinkClick}>الدعم النفسي</NavLink>
                                 </div>
                             )}
                         </div>
-                        <NavLink to="/contact" className={({ isActive }) => (isActive ? 'active' : '')}>اتصل بنا</NavLink>
+                        <NavLink to="/contact" className={({ isActive }) => (isActive ? 'active' : '')} onClick={handleLinkClick}>اتصل بنا</NavLink>
                     </div>
                 </nav>
             </div>
@@ -87,4 +106,4 @@ function Header() {
     );
 }
 
-export default Header;  
+export default Header;
