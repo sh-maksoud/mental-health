@@ -1,4 +1,4 @@
-import './SkillDevelopment.css';
+import './SkillsDevelopment.css';
 
 const skills = [
     {

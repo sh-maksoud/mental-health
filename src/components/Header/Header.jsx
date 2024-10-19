@@ -109,6 +109,9 @@
 // export default Header;
 
 
+
+
+
 import { NavLink } from 'react-router-dom';
 import { useEffect, useState, useRef } from 'react';
 import './Header.css';
@@ -214,13 +217,13 @@ function Header() {
                                     <NavLink to="/book-doctor" onClick={handleLinkClick}>احجز مع دكتور</NavLink>
                                     <NavLink to="/book-specialist" onClick={handleLinkClick}>احجز مع أخصائي</NavLink>
                                     <NavLink to="/course-booking" onClick={handleLinkClick}>احجز دورات تدريبية</NavLink>
-                                    <NavLink to="/ershad" onClick={handleLinkClick}>إرشاد أسري</NavLink>
+                                    <NavLink to="/family-counseling" onClick={handleLinkClick}>إرشاد أسري</NavLink>
                                     <NavLink to="/autism-resources" onClick={handleLinkClick}>اضطرابات التوحد</NavLink>
                                     <NavLink to="/learning-difficulties" onClick={handleLinkClick}>صعوبات التعلم</NavLink>
                                     <NavLink to="/behavior-modification" onClick={handleLinkClick}>تعديل السلوك</NavLink>
-                                    <NavLink to="/skill-development" onClick={handleLinkClick}>تنمية المهارات</NavLink>
+                                    <NavLink to="/skills-development" onClick={handleLinkClick}>تنمية المهارات</NavLink>
                                     <NavLink to="/speech-rehabilitation" onClick={handleLinkClick}> التخاطب</NavLink>
-                                    <NavLink to="/counseling" onClick={handleLinkClick}>الدعم النفسي</NavLink>
+                                    <NavLink to="/mental-support" onClick={handleLinkClick}>الدعم النفسي</NavLink>
                                 </div>
                             )}
                         </div>

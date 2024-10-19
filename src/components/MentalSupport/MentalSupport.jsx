@@ -1,5 +1,4 @@
-import React from 'react';
-import './Counseling.css';
+import './MentalSupport.css';
 
 function Counseling() {
     return (
