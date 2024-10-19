@@ -57,6 +57,7 @@
     text-overflow: ellipsis;
     white-space: nowrap;
     margin: 10px;
+    color: white;
 }
 
 .bdt-ps-dragon-button {
@@ -137,7 +138,11 @@
     }
 
     .bdt-prime-slider-wrapper {
-        top: 20%;
+        top: 50%;
+    }
+    .bdt-prime-slider-content p{
+        font-size: 14px;
+        text-align: center;
     }
 
     .bdt-ps-dragon-button {
@@ -145,3 +150,6 @@
         padding: 6px 12px;
     }
 }
+
+
+
