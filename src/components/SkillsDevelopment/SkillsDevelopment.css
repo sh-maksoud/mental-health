@@ -2,32 +2,54 @@
     margin: 20px 0;
     padding: 15px;
     border: 1px solid #007acc;
-    background-color: #f5f9e9;
+    background-color: #f5f9e9; /* Light background for the section */
 }
 
 ul {
-    list-style: none;
-    padding: 0;
+    list-style: none; /* Remove default list styles */
+    padding: 0; /* Remove padding */
 }
 
 li {
     margin: 15px 0;
     padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    background-color: #ffffff; 
-    transition: background-color 0.3s ease;
+    border: 1px solid #ccc; /* Border for list items */
+    border-radius: 5px; /* Rounded corners */
+    background-color: #ffffff; /* White background for list items */
+    transition: background-color 0.3s ease; /* Smooth background color change */
 }
 
 li:hover {
-    background-color: #f1f1f1; 
+    background-color: #f1f1f1; /* Light gray background on hover */
 }
 
 a {
-    color: #007acc;
-    text-decoration: none;
+    color: #007acc; /* Link color */
+    text-decoration: none; /* Remove underline */
 }
 
 a:hover {
-    text-decoration: underline;
+    text-decoration: underline; /* Underline on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #skill-development {
+        padding: 10px; /* Adjust padding for smaller screens */
+    }
+
+    li {
+        padding: 8px; /* Slightly reduce padding in list items */
+    }
+}
+
+@media (max-width: 480px) {
+    #skill-development {
+        padding: 5px; /* Further adjust padding */
+    }
+
+    li {
+        padding: 5px; /* Further reduce padding */
+        margin: 10px 0; /* Slightly reduce margin */
+    }
 }

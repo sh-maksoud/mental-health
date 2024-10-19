@@ -4,7 +4,7 @@
     border: 1px solid #007acc;
     border-radius: 5px;
     margin: 20px auto; /* Centering */
-    max-width: 600px; /* Added max-width for responsiveness */
+    max-width: 600px; /* Maximum width for responsiveness */
     text-align: right; /* For RTL support */
 }
 
@@ -33,8 +33,8 @@
     padding: 10px;
     border: 1px solid #007acc;
     border-radius: 5px;
-    width: 100%; /* Use 100% for full width */
-    box-sizing: border-box; /* Ensure padding is included in width */
+    width: 100%; /* Full width */
+    box-sizing: border-box; /* Include padding in width */
 }
 
 .submit-button {
@@ -44,6 +44,7 @@
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth transition */
 }
 
 .submit-button:hover {
@@ -56,14 +57,41 @@
 }
 
 .specialist-item {
-    display: flex; /* Use flexbox for alignment */
+    display: flex; /* Flexbox for alignment */
     align-items: center; /* Center items vertically */
     margin-bottom: 15px; /* Space between list items */
 }
 
 .specialist-image {
-    width: 100px; /* Set image width */
+    width: 80px; /* Adjust image width for responsiveness */
     height: auto; /* Maintain aspect ratio */
-    border-radius: 50%; /* Make the image round */
-    margin-left: 10px; /* Space between image and text */
+    border-radius: 50%; /* Round image */
+    margin-right: 10px; /* Space between image and text */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .book-specialist {
+        padding: 15px; /* Adjust padding for smaller screens */
+    }
+
+    .specialist-image {
+        width: 60px; /* Smaller images for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .book-specialist {
+        padding: 10px; /* Further adjust padding */
+    }
+
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+        padding: 8px; /* Slightly reduce input padding */
+    }
+
+    .submit-button {
+        padding: 8px; /* Adjust button padding */
+    }
 }

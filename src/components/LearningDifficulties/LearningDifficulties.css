@@ -15,7 +15,7 @@ li {
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    background-color: #ffffff; 
+    background-color: #ffffff;
     transition: background-color 0.3s ease;
 }
 
@@ -25,9 +25,37 @@ li:hover {
 
 a {
     color: #007acc;
-    text-decoration: none; 
+    text-decoration: none;
+    transition: text-decoration 0.3s ease; /* Added transition for smoother hover */
 }
 
 a:hover {
-    text-decoration: underline; 
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #learning-difficulties {
+        padding: 10px; /* Adjust padding for smaller screens */
+    }
+
+    li {
+        padding: 8px; /* Slightly reduce padding for list items */
+    }
+}
+
+@media (max-width: 480px) {
+    #learning-difficulties {
+        margin: 15px 0; /* Reduce margin for very small screens */
+        padding: 8px; /* Further reduce padding */
+    }
+
+    li {
+        margin: 10px 0; /* Adjust margin for list items */
+        padding: 6px; /* Further reduce padding */
+    }
+
+    a {
+        font-size: 0.9rem; /* Reduce font size for better readability */
+    }
 }

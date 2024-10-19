@@ -1,23 +1,17 @@
-/* DoctorSearch.css */
-
 .doctor-search {
     padding: 20px;
     background-color: #f9f9f9;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    width: 500px;
-    margin: 0 auto; 
-    max-width: 800px;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    max-width: 100%; /* Make it responsive */
+    margin: 20px auto;
     text-align: center;
 }
 
 .doctor-search h2 {
     color: #333;
-    font-size: 24px;
+    font-size: 1.5rem;
     margin-bottom: 20px;
-    text-align: center; 
 }
 
 .search-form {
@@ -36,7 +30,8 @@ select {
     padding: 10px;
     border-radius: 4px;
     border: 1px solid #ccc;
-    font-size: 16px;
+    font-size: 1rem;
+    width: 100%; /* Full width for responsiveness */
 }
 
 input[type="text"]:focus,
@@ -52,10 +47,9 @@ button {
     border: none;
     border-radius: 4px;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 1rem;
     transition: background-color 0.3s ease;
-    max-width: 300px;
-    margin: 0 auto;
+    max-width: 100%; /* Full width button */
 }
 
 button:hover {
@@ -64,29 +58,66 @@ button:hover {
 
 .results {
     margin-top: 20px;
-    display: flex; /* Change to flex for row layout */
-    flex-wrap: wrap; /* Allow wrapping for smaller screens */
-    gap: 20px; /* Space between result items */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center items for better alignment */
+    gap: 20px;
 }
 
 .result-item {
-    flex: 1 1 220px; /* Flex-grow, flex-shrink, flex-basis for responsive sizing */
+    flex: 1 1 220px;
     padding: 15px;
     background-color: #fff;
     border-radius: 8px;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
     transition: transform 0.2s ease;
+    min-width: 220px; /* Ensures minimum width on small screens */
 }
 
 .result-item:hover {
-    transform: translateY(-5px); /* Lift effect on hover */
+    transform: translateY(-5px);
 }
 
 .result-item h3 {
     margin: 0;
     color: #333;
+    font-size: 1.25rem;
 }
 
 .result-item p {
     color: #666;
+    font-size: 0.9rem;
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 600px) {
+    .doctor-search {
+        padding: 15px;
+    }
+
+    .doctor-search h2 {
+        font-size: 1.3rem;
+    }
+
+    .search-form {
+        gap: 10px;
+    }
+
+    button {
+        font-size: 0.9rem;
+        padding: 8px 15px;
+    }
+    
+    .result-item {
+        min-width: 180px;
+        padding: 10px;
+    }
+
+    .result-item h3 {
+        font-size: 1.1rem;
+    }
+
+    .result-item p {
+        font-size: 0.85rem;
+    }
 }

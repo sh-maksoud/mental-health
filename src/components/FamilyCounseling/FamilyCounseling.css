@@ -1,13 +1,12 @@
-/* Ershad.css */
 section {
     margin: 20px 0;
     padding: 15px;
     border: 1px solid #007acc;
     border-radius: 5px;
-    background-color: white;
+    background-color: #fff;
 }
 
-h2 {
+h2, h3 {
     color: #007acc;
     font-family: 'Cairo', sans-serif;
     text-align: center;
@@ -15,9 +14,7 @@ h2 {
 }
 
 h3 {
-    color: #007acc;
     margin-top: 20px;
-    font-family: 'Cairo', sans-serif;
 }
 
 ul {
@@ -48,21 +45,21 @@ li a:hover {
     }
 
     h2, h3 {
-        font-size: 1.2rem;
+        font-size: 1.5rem;
     }
 
     ul {
-        padding-left: 10px;
+        padding-left: 15px;
     }
 }
 
 @media (max-width: 480px) {
     h2, h3 {
-        font-size: 1rem;
+        font-size: 1.2rem;
     }
 
     ul {
-        padding-left: 5px;
+        padding-left: 10px;
     }
 
     li {

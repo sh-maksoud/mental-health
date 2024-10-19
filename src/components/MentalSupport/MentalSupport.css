@@ -1,36 +1,71 @@
 .counseling-section {
     padding: 20px;
-    background-color: #f9f9f9;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    margin: 20px;
+    background-color: #f9f9f9; /* Light background for section */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+    margin: 20px; /* Margin around the section */
 }
 
 .counseling-section h2 {
-    color: #333;
-    font-size: 28px;
-    margin-bottom: 15px;
+    color: #333; /* Dark text for headings */
+    font-size: 28px; /* Heading size */
+    margin-bottom: 15px; /* Space below heading */
 }
 
 .counseling-section p {
-    color: #555;
-    font-size: 16px;
-    line-height: 1.5;
+    color: #555; /* Medium gray for paragraph text */
+    font-size: 16px; /* Font size for paragraph */
+    line-height: 1.5; /* Line height for readability */
 }
 
 .counseling-section h3 {
-    color: #007bff;
-    font-size: 24px;
-    margin: 20px 0 10px;
+    color: #007bff; /* Blue color for subheadings */
+    font-size: 24px; /* Subheading size */
+    margin: 20px 0 10px; /* Space around subheading */
 }
 
 .counseling-section ul {
-    list-style-type: disc;
-    padding-left: 20px;
+    list-style-type: disc; /* Bulleted list style */
+    padding-left: 20px; /* Space for bullet points */
 }
 
 .counseling-section li {
-    color: #666;
-    font-size: 16px;
-    margin-bottom: 8px;
+    color: #666; /* Gray color for list items */
+    font-size: 16px; /* Font size for list items */
+    margin-bottom: 8px; /* Space below each list item */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .counseling-section {
+        padding: 15px; /* Adjust padding for medium screens */
+    }
+
+    .counseling-section h2 {
+        font-size: 24px; /* Reduce font size for headings */
+    }
+
+    .counseling-section h3 {
+        font-size: 20px; /* Reduce font size for subheadings */
+    }
+
+    .counseling-section p,
+    .counseling-section li {
+        font-size: 14px; /* Reduce font size for paragraphs and list items */
+    }
+}
+
+@media (max-width: 480px) {
+    .counseling-section {
+        padding: 10px; /* Further reduce padding for small screens */
+        margin: 15px; /* Adjust margin for small screens */
+    }
+
+    .counseling-section h2 {
+        font-size: 20px; /* Further reduce font size for headings */
+    }
+
+    .counseling-section h3 {
+        font-size: 18px; /* Further reduce font size for subheadings */
+    }
 }

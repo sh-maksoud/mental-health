@@ -1,21 +1,16 @@
-/* CourseBooking.css */
-
 .course-booking {
     padding: 20px;
     background-color: #f9f9f9;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    width: 500px;
-    margin: 0 auto;
-    max-width: 800px;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    max-width: 100%; /* Make it fully responsive */
+    margin: 20px auto;
     text-align: center;
 }
 
 .course-booking h2 {
     color: #333;
-    font-size: 24px;
+    font-size: 1.5rem;
     margin-bottom: 10px;
 }
 
@@ -45,28 +40,17 @@ label {
     display: block;
 }
 
-input {
-    width: 100%;
-    padding: 10px;
-    border-radius: 4px;
-    border: 1px solid #ccc;
-    margin-bottom: 10px;
-    font-size: 16px;
-}
-
-input:focus {
-    border-color: #007bff;
-    outline: none;
-}
-
+input,
 select {
     width: 100%;
     padding: 10px;
     border-radius: 4px;
     border: 1px solid #ccc;
-    font-size: 16px;
+    font-size: 1rem;
+    margin-bottom: 10px;
 }
 
+input:focus,
 select:focus {
     border-color: #007bff;
     outline: none;
@@ -81,17 +65,15 @@ select:focus {
 }
 
 button {
-    width: 100%;
-    padding: 10px 20px;
+    width: 100%; /* Full-width for responsiveness */
+    padding: 10px;
     background-color: #007bff;
     color: #fff;
     border: none;
     border-radius: 4px;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 1rem;
     transition: background-color 0.3s ease;
-    max-width: 300px;
-    margin: 0 auto;
 }
 
 button:hover {
@@ -105,4 +87,20 @@ button:hover {
     border: 1px solid #c3e6cb;
     border-radius: 4px;
     color: #155724;
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 600px) {
+    .course-booking h2 {
+        font-size: 1.3rem;
+    }
+
+    .selection-section {
+        gap: 15px;
+    }
+
+    button {
+        font-size: 0.9rem;
+        padding: 8px 15px;
+    }
 }
