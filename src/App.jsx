@@ -23,6 +23,7 @@ import ScrollToTop from './components/ScrollToTop';
 
 
 
+
 import './App.css';
 
 function App() {
@@ -31,6 +32,7 @@ function App() {
       <ScrollToTop />
       <div className="App">
         <Header />
+        
         <main>
           <Routes>
             <Route path="/" element={<Home />} />

@@ -2,6 +2,7 @@ import './Home.css';
 import { Link } from 'react-router-dom'; // Importing Link for routing
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'; // Import FontAwesomeIcon
 import { faUserMd, faCalendarCheck, faChalkboardTeacher, faHandsHelping, faPuzzlePiece, faBook, faWrench, faChild, faBrain, faCommentDots, faHeadSideVirus } from '@fortawesome/free-solid-svg-icons'; // Import required icons
+import Slideshow from '../Slideshow/Slideshow';
 
 function Home() {
     return (
@@ -11,6 +12,7 @@ function Home() {
             <p>
                 هدفنا هو توفير الدعم اللازم للأفراد وعائلاتهم، من خلال تقديم جلسات إرشادية، وحجز مواعيد مع دكاترة متخصصين، بالإضافة إلى حجز الكورسات التي تلبي احتياجاتكم.
             </p>
+            <Slideshow />
             <h3>خدماتنا تشمل</h3>
             <div className="homecards-container">
                 <Link to="/join-doctors" className="homecard">
@@ -72,8 +74,11 @@ function Home() {
             <p>
                 انضموا إلينا في رحلتكم نحو الصحة النفسية الأفضل! تواصلوا معنا للحصول على المزيد من المعلومات حول خدماتنا وكيف يمكننا مساعدتكم.
             </p>
+            
         </section>
-    );
+        
+    );  
+   
 }
 
 export default Home;

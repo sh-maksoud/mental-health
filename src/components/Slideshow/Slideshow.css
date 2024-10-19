@@ -1,0 +1,147 @@
+/* Slideshow Container */
+.slideshow {
+    width: 100%;
+    height: 600px;
+    overflow: hidden;
+    position: relative;
+}
+
+.bdt-slideshow-item {
+    position: relative;
+    height: 100%;
+}
+
+.bdt-ps-dragon-bg {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.bdt-ps-slide-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.bdt-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(39, 36, 50, 0.5);
+    z-index: 1;
+}
+
+.bdt-prime-slider-wrapper {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    max-width: 90%;
+    text-align: center;
+    padding: 0 10px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+}
+
+.bdt-prime-slider-content h1,
+.bdt-prime-slider-content p {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin: 10px;
+}
+
+.bdt-ps-dragon-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: white;
+    color: #007acc; /* Use a color that matches your theme */
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 15px;
+    border: 2px solid #007acc; /* Match the border color with button text color */
+    transition: all 0.3s ease;
+    margin-top: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+.bdt-ps-dragon-button:hover {
+    background: rgba(255, 255, 255, 0.4);
+    border-color: #005fa3; /* Darken the border on hover */
+    color: #005fa3; /* Change text color on hover */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+    transform: translateY(-3px);
+}
+
+.bdt-ps-dragon-button:active {
+    transform: translateY(0);
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.15);
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #007acc !important;
+    padding: 10px;
+    border-radius: 50%;
+    top: 15%;
+    transform: translateY(-30%) !important;
+    position: absolute;
+    z-index: 10;
+    margin: 10px;
+}
+
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white !important;
+}
+
+.swiper-pagination-bullet {
+    background-color: #007acc; /* Use the primary color */
+}
+
+.swiper-pagination-bullet-active {
+    background-color: #005fa3; /* Darker shade for active bullet */
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    .slideshow {
+        height: 300px;
+    }
+
+    .bdt-prime-slider-wrapper {
+        top: 25%;
+    }
+
+    .bdt-ps-dragon-button {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .slideshow {
+        height: 250px;
+    }
+
+    .bdt-prime-slider-wrapper {
+        top: 20%;
+    }
+
+    .bdt-ps-dragon-button {
+        font-size: 12px;
+        padding: 6px 12px;
+    }
+}
