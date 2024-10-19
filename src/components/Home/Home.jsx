@@ -70,15 +70,23 @@ function Home() {
                     <h4>الدعم النفسي</h4>
                     <p>استشارات ودعم نفسي لتحقيق التوازن والاستقرار.</p>
                 </Link>
+                {/* New Cards for Sign Language and Deaf Support */}
+                <Link to="/sign-language-training" className="homecard">
+                    <FontAwesomeIcon icon={faBrain} className="homecard-icon" />
+                    <h4>التواصل بلغة الإشارة</h4>
+                    <p>جلسات تعليمية لتعليم لغة الإشارة وتعزيز التواصل.</p>
+                </Link>
+                <Link to="/deaf-support" className="homecard">
+                    <FontAwesomeIcon icon={faHandsHelping} className="homecard-icon" />
+                    <h4>دعم للأشخاص الصم</h4>
+                    <p>استشارات ودعم نفسي للأفراد الذين يعانون من فقدان السمع.</p>
+                </Link>
             </div>
             <p>
                 انضموا إلينا في رحلتكم نحو الصحة النفسية الأفضل! تواصلوا معنا للحصول على المزيد من المعلومات حول خدماتنا وكيف يمكننا مساعدتكم.
             </p>
-            
         </section>
-        
     );  
-   
 }
 
 export default Home;

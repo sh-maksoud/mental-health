@@ -16,6 +16,8 @@ import LearningDifficulties from './components/LearningDifficulties/LearningDiff
 import BehaviorModification from './components/BehaviorModification/BehaviorModification';
 import SkillsDevelopment from './components/SkillsDevelopment/SkillsDevelopment';
 import SpeechRehabilitation from './components/SpeechRehabilitation/SpeechRehabilitation'; 
+import SignLanguageTraining from './components/SignLanguageTraining/SignLanguageTraining';
+import DeafSupport from './components/DeafSupport/DeafSupport';
 import MentalSupport from './components/MentalSupport/MentalSupport';
 import PrivacyPolicy from './pages/PrivacyPolicy/PrivacyPolicy';
 import ScrollToTopButton from './components/ScrollToTopButton/ScrollToTopButton';
@@ -51,6 +53,8 @@ function App() {
             <Route path="/skills-development" element={<SkillsDevelopment />} />
             <Route path="/speech-rehabilitation" element={<SpeechRehabilitation />} /> 
             <Route path="/mental-support" element={<MentalSupport />} />
+            <Route path="/sign-language-training" element={<SignLanguageTraining />} />
+            <Route path="/deaf-support" element={<DeafSupport />} />
             <Route path="/privacy-policy" element={<PrivacyPolicy />} />
           </Routes>
         </main>

@@ -111,6 +111,8 @@ function Header() {
                                     <NavLink to="/behavior-modification" onClick={handleLinkClick}>تعديل السلوك</NavLink>
                                     <NavLink to="/skills-development" onClick={handleLinkClick}>تنمية المهارات</NavLink>
                                     <NavLink to="/speech-rehabilitation" onClick={handleLinkClick}> التخاطب</NavLink>
+                                    <NavLink to="/sign-language-training" onClick={handleLinkClick}>تدريب لغة الإشارة</NavLink>
+                                    <NavLink to="/deaf-support" onClick={handleLinkClick}> الصم والبكم</NavLink>
                                     <NavLink to="/mental-support" onClick={handleLinkClick}>الدعم النفسي</NavLink>
                                 </div>
                             )}
